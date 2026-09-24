@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KSC Advisers</title>
+<meta name="description" content="Regulatory, clinical, capital and commercial advice, taken together, by someone who has been in your shoes. For medtech founders and chief executives. Based in Edinburgh, working across the UK and Ireland.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KSC Advisers">
+<meta property="og:title" content="KSC Advisers">
+<meta property="og:description" content="Regulatory, clinical, capital and commercial advice, taken together, by someone who has been in your shoes. For medtech founders and chief executives. Based in Edinburgh, working across the UK and Ireland.">
+<meta property="og:url" content="https://kscadvisors.com/">
+<meta property="og:image" content="https://kscadvisors.com/assets/share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --teal:#134F5C;      /* signature */
+    --teal-deep:#0B3238; /* header, close, footer */
+    --ink:#1C2526; --ink-2:#3E4A4B; --muted:#5F6D6E;
+    --grey:#F4F5F5; --line:#E1E4E4;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{color-scheme:light;scroll-behavior:smooth}
+  body{background:#fff;color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 32px}
+  h1,h2,h3{font-family:var(--serif);font-weight:normal;letter-spacing:-.005em}
+  h2{font-size:32px;line-height:1.2;margin:0 0 16px;max-width:820px}
+  h3{font-size:22px;line-height:1.3;margin:26px 0 10px}
+  p{margin:0 0 14px;max-width:700px}
+  ul{margin:0 0 14px 20px;max-width:700px}
+  li{margin-bottom:7px}
+  section{padding:72px 0}
+  section.grey{background:var(--grey)}
+  .eyebrow{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--teal);margin-bottom:14px}
+  .cta{display:inline-flex;gap:28px;margin-top:8px;font-weight:600;color:var(--teal)}
+  .cta a{border-bottom:1.5px solid currentColor;padding-bottom:2px}
+
+  /* header */
+  header{background:var(--teal-deep);color:#fff}
+  .nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+  .brand{font-family:var(--serif);font-size:22px;color:#fff}
+  .links{display:flex;gap:26px;font-size:15px;font-weight:600;color:#fff}
+  .links a{border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:1px}
+
+  /* hero */
+  .hero{background:var(--teal);color:#fff;padding:88px 0}
+  .hero .grid{display:grid;grid-template-columns:7fr 4fr;gap:56px;align-items:center}
+  .hero h1{font-size:44px;line-height:1.14;margin:0 0 22px}
+  .hero p{font-size:19px;color:rgba(255,255,255,.85);max-width:560px}
+  .hero img{width:100%;max-width:380px;height:auto;display:block;border-radius:4px;justify-self:end}
+
+  /* sequence */
+  .seq{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 8px}
+  .seq div{background:#fff;border:1px solid var(--line);border-radius:4px;padding:18px 18px 16px;font-family:var(--serif);font-size:19px;line-height:1.3}
+  .seq div small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:6px}
+  section.grey .seq div{border-color:transparent}
+
+  /* record + quote */
+  blockquote{font-family:var(--serif);font-size:21px;line-height:1.4;max-width:700px;margin:26px 0 8px;padding:0 0 0 20px;border-left:3px solid var(--teal)}
+  .attr{font-size:14px;color:var(--ink-2)}
+  .src{font-size:13px;color:var(--muted);margin-top:-6px}
+  .attr a{border-bottom:1px solid var(--line)}
+
+  /* edinburgh */
+  .place{margin:0}
+  .place img{display:block;width:100%;height:440px;object-fit:cover;object-position:center 60%}
+  .place figcaption{font-size:14px;color:var(--ink-2);padding-top:10px;padding-bottom:0}
+  .place figcaption span{color:var(--muted)}
+
+  /* close + footer */
+  .close{background:var(--teal-deep);color:#fff}
+  .close h2{color:#fff}
+  .close p{color:rgba(255,255,255,.85)}
+  .close .cta{color:#fff}
+  .close .cta a{border-color:rgba(255,255,255,.5)}
+  footer{background:var(--teal-deep);color:rgba(255,255,255,.75);padding:28px 0 40px;font-size:15px;line-height:1.7;border-top:1px solid rgba(255,255,255,.12)}
+  footer a{color:#fff}
+
+  @media (max-width:760px){
+    .wrap{padding:0 20px}
+    section{padding:52px 0}
+    h2{font-size:27px}
+    .hero{padding:56px 0}
+    .hero .grid{grid-template-columns:1fr;gap:32px}
+    .hero h1{font-size:33px}
+    .hero img{justify-self:start;max-width:300px}
+    .seq{grid-template-columns:1fr;gap:10px}
+    .place img{height:240px}
+  }
+</style>
+</head>
+<body>
+
+<header><div class="wrap nav">
+  <a class="brand" href="#top" id="top">KSC Advisers</a>
+  <nav class="links"><a href="mailto:kevin@kscadvisors.com">Email</a><a href="https://www.linkedin.com/in/kevinkelley4">LinkedIn</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap grid">
+  <div>
+    <h1>Regulatory, clinical, capital and commercial advice, taken together, by someone who has been in your shoes.</h1>
+    <p>For medtech founders and chief executives. Based in Edinburgh, working across the UK and Ireland.</p>
+  </div>
+  <img src="assets/kevin-kelley.jpg" alt="Kevin Kelley">
+</div></div>
+
+<section id="who"><div class="wrap">
+  <div class="eyebrow">Who we work with</div>
+  <h2>Founders holding a technical case and a funding clock at the same time.</h2>
+  <p>Founders and chief executives of medtech companies at startup or small-company scale, pre-revenue to early revenue. Mostly first-time CEOs. Capable people who do not yet know what they do not know. Nobody asks for help they cannot name.</p>
+  <p>Based in the UK, Ireland or the rest of the EU, or in the US with the UK, Ireland or the rest of the EU in the plan.</p>
+</div></section>
+
+<section id="problem" class="grey"><div class="wrap">
+  <div class="eyebrow">The problem</div>
+  <h2>Medtech founders do not fail at inflection points because they lack good advisers.</h2>
+  <p>They fail because good advice arrives one lane at a time. Regulatory consultants work in one lane. Finance advisers work in another. Commercial advisers in a third.</p>
+  <p>The regulatory pathway is chosen on technical grounds, the funding round is sized to the pathway, and the commercial question arrives last, when the claims are fixed and the money is committed.</p>
+  <p>The financial story has to hold all this together as one narrative for the investor, the board or the acquirer. At the moment the stakes are highest, it almost never does.</p>
+</div></section>
+
+<section id="what"><div class="wrap">
+  <div class="eyebrow">What we do</div>
+  <h2>Four decisions at once.</h2>
+  <p>A founder is making four decisions at the same time:</p>
+  <ul>
+    <li>which regulatory pathway</li>
+    <li>what clinical evidence</li>
+    <li>where to raise the next round</li>
+    <li>in which market to launch first</li>
+  </ul>
+  <p>Most advisers will take one of them. We advise on all four as one set of decisions. They are not independent, and taking them in the wrong order is expensive.</p>
+
+  <h3>It begins with great science. The strategy has to extend beyond the science.</h3>
+  <p>Innovation and science lead. Early market and commercial strategy set the regulatory milestones. The financial story holds all of it together.</p>
+  <div class="seq">
+    <div><small>Leads</small>Innovation and science</div>
+    <div><small>Sets the milestones</small>Early market and commercial strategy</div>
+    <div><small>The milestones</small>Regulatory</div>
+    <div><small>Holds it together</small>The financial story</div>
+  </div>
+
+  <h3>The finance side</h3>
+  <p>Everything that connects the money to the plan:</p>
+  <ul>
+    <li>what the company is worth and why</li>
+    <li>how much to raise and when</li>
+    <li>what an investor will ask for in diligence</li>
+    <li>how the regulatory and clinical plan changes the funding requirement</li>
+    <li>what a US entry does to the capital structure</li>
+  </ul>
+  <p>The work is produced as investor-grade financial materials: summary cap tables, liquidation waterfalls, three-statement pro formas, market sizing, and pitch decks built or evaluated to a presentation standard.</p>
+</div></section>
+
+<section id="why" class="grey"><div class="wrap">
+  <div class="eyebrow">Why KSC Advisers</div>
+  <h2>The judgement is built on situations like yours.</h2>
+  <p>Two decades as a medtech founder, chief executive and chief financial officer in the US, UK and EU. The decision points and milestones for success extend well beyond the science.</p>
+  <ul>
+    <li>Five product launches across medtech, clean tech and healthcare</li>
+    <li>Capital raised across early and growth stages with angel and institutional investors</li>
+    <li>Restructurings, including a division of a $3B health system</li>
+    <li>Advisory work that has run from concept to revenue in global markets</li>
+    <li>Four companies co-founded. Four exits. Three medical device patents.</li>
+  </ul>
+  <p>They all point to the same place: the structural inflection point.</p>
+  <p>Regulatory pathway decisions carry financial consequences. Capital strategies depend on regulatory sequencing. Board and investor narratives must hold up under diligence. These questions are not always visible to the founder in the middle of them. They become visible when someone who has seen the moment hundreds of times is working alongside you.</p>
+  <p>Judgement-level advice produces one coherent picture. That judgement is built on situations like yours: capital raises, exits, restructurings, board transitions. We bring that experience to every engagement.</p>
+  <blockquote>"I rarely come across a CEO with such an acute understanding of the clinical and academic world. He helped frame our ideas. Making them a commercial success is the difficult part. Yet Kevin makes it so easy and efficient."</blockquote>
+  <p class="attr"><a href="https://www.linkedin.com/in/jean-philippe-pignol-md-phd-928746111/">Jean-Philippe Pignol, MD, PhD</a></p>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="eyebrow">How we work</div>
+  <h2>Wherever you decide to build the company, we can help you get there.</h2>
+  <p>Building and scaling in the UK, Ireland or the rest of the EU is a legitimate plan. If the plan is the US, that route has been run repeatedly. We will not assume the answer on your behalf.</p>
+  <p>In our experience, and in market commentary, 80% of early-stage medical device companies in the UK, Ireland and the rest of the EU intend to enter the US market at some point. What they need is to know now what the US will eventually require of the company they are building: the clinical evidence, the regulatory and quality system and the capital structure. This is all driven by the commercial strategy.</p>
+  <p>Being here means you can get a US perspective into the room, and a partner who can tell you early what a given pathway will cost in time and capital, before you spend money finding out.</p>
+</div></section>
+
+<figure class="place">
+  <img src="assets/edinburgh-futures-institute.jpg" alt="The courtyard of the Edinburgh Futures Institute, the former Royal Infirmary of Edinburgh">
+  <figcaption class="wrap">The Edinburgh Futures Institute is part of the original Edinburgh Royal Infirmary. <span>Photograph: Arcaist, CC BY 4.0.</span></figcaption>
+</figure>
+
+<section id="where" class="grey"><div class="wrap">
+  <div class="eyebrow">Where</div>
+  <h2>Edinburgh, by choice.</h2>
+  <p>While KSC Advisers is based in Edinburgh, as a firm we work with founders across the UK and Ireland, and with US companies whose plan touches the UK, Ireland or the rest of the EU.</p>
+  <p>Edinburgh is representative of the innovation happening right across the UK and Irish economies. Scotland has been a leader in medical research for centuries, and that continues to this day.</p>
+  <p>Scotland has been the UK's leading destination for foreign direct investment outside London for eleven consecutive years, and Edinburgh ranks first among UK cities outside London for future investment.</p>
+  <p class="src">Source: EY Scotland Attractiveness Survey, 2026.</p>
+</div></section>
+
+<section id="contact" class="close"><div class="wrap">
+  <h2>If you are at that moment, let's talk.</h2>
+  <p>The clients we work with share an instinct for the moments that call for a decision, not hours of additional analysis. Judgement applied at these inflection points determines whether the venture succeeds or fails.</p>
+  <div class="cta"><a href="mailto:kevin@kscadvisors.com">Email Kevin</a><a href="https://www.linkedin.com/in/kevinkelley4">Kevin on LinkedIn</a></div>
+</div></section>
+
+<footer><div class="wrap">
+  KSC Advisers Ltd · Edinburgh, UK<br>
+  <a href="mailto:kevin@kscadvisors.com">kevin@kscadvisors.com</a> · <a href="https://www.linkedin.com/in/kevinkelley4">LinkedIn</a><br>
+  © 2026 KSC Advisers Ltd
+</div></footer>
+
+</body>
+</html>
