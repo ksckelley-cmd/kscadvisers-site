@@ -50,13 +50,24 @@
 
   /* hero */
   .hero{background:var(--teal);color:#fff;padding:88px 0}
-  .hero .grid{display:grid;grid-template-columns:7fr 4fr;gap:56px;align-items:center}
+  .hero .grid{display:block}
+  .hero h1{max-width:860px}
   .hero h1{font-size:44px;line-height:1.14;margin:0 0 22px}
   .hero p{font-size:19px;color:rgba(255,255,255,.85);max-width:560px}
-  .hero .people{display:grid;grid-template-columns:1fr 1fr;gap:16px;width:100%;max-width:420px;justify-self:end}
-  .hero .people img,.hero .photo-slot{width:100%;aspect-ratio:1/1;display:block;border-radius:4px;object-fit:cover}
-  .hero .photo-slot{background:rgba(255,255,255,.1);border:1px dashed rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(255,255,255,.7);text-align:center;padding:10px}
-  .hero figcaption{font-size:14px;color:rgba(255,255,255,.85);margin-top:8px}
+  /* about: profiles */
+  .profile{display:grid;grid-template-columns:260px 1fr;gap:48px;align-items:start;padding:12px 0 40px}
+  .profile + .profile{border-top:1px solid var(--line);padding-top:44px}
+  .profile .photo,.profile .photo-slot{width:100%;aspect-ratio:1/1;display:block;border-radius:4px;object-fit:cover}
+  .profile .photo-slot{background:#fff;border:1px dashed #C6CDCD;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--muted)}
+  .profile h3{font-size:30px;margin:0 0 4px}
+  .profile .role{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--teal);margin-bottom:18px}
+  .profile p{max-width:640px}
+  .facts{display:flex;flex-wrap:wrap;gap:0;margin:22px 0 4px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:640px}
+  .facts div{flex:1 1 0;min-width:130px;padding:14px 18px 12px 0}
+  .facts div + div{padding-left:18px;border-left:1px solid var(--line)}
+  .facts b{display:block;font-family:var(--serif);font-weight:normal;font-size:26px;line-height:1.1;color:var(--teal-deep)}
+  .facts span{font-size:13px;color:var(--ink-2);line-height:1.35;display:block;margin-top:4px}
+  .profile blockquote{font-size:19px;margin:26px 0 8px;max-width:640px}
 
   /* sequence */
   .seq{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 8px}
@@ -90,9 +101,11 @@
     section{padding:52px 0}
     h2{font-size:27px}
     .hero{padding:56px 0}
-    .hero .grid{grid-template-columns:1fr;gap:32px}
     .hero h1{font-size:33px}
-    .hero .people{justify-self:start;max-width:340px}
+    .profile{grid-template-columns:1fr;gap:22px}
+    .profile .photo,.profile .photo-slot{max-width:220px}
+    .facts div{min-width:45%}
+    .facts div + div{padding-left:0;border-left:0}
     .seq{grid-template-columns:1fr;gap:10px}
     .place img{height:240px}
   }
@@ -109,10 +122,6 @@
   <div>
     <h1>For a medtech startup, the course turns on inflection points where commercial, regulatory and capital decisions arrive together.</h1>
     <p>We have been in your shoes. Now we are in your corner.</p>
-  </div>
-  <div class="people">
-    <figure><img src="assets/kevin-kelley.jpg" alt="Kevin Kelley"><figcaption>Kevin Kelley</figcaption></figure>
-    <figure><div class="photo-slot">Photograph to follow</div><figcaption>Jonathan Penny</figcaption></figure>
   </div>
 </div></div>
 
@@ -158,27 +167,39 @@
 
 <section id="kevin" class="grey"><div class="wrap">
   <div class="eyebrow">About us</div>
-  <h2>Kevin has over two decades of experience operating and advising early-stage companies.</h2>
-  <p>Medtech founder, chief executive and chief financial officer in the US, UK and EU.</p>
-  <ul>
-    <li>Five product launches across medtech, clean tech and healthcare</li>
-    <li>Three exits. Three medical device patents. Two companies co-founded.</li>
-    <li>Capital raised across early and growth stages with angel and institutional investors</li>
-    <li>Restructurings and turnarounds, including a division of a $3B health system</li>
-    <li>Advisory work that has run from concept to revenue in global markets</li>
-  </ul>
-  <p class="attr"><a href="https://www.linkedin.com/in/jean-philippe-pignol-md-phd-928746111/">Jean-Philippe Pignol, MD, PhD</a>, Chair, Concure Oncology Scientific Advisory Board</p>
-  <blockquote>"I rarely come across a CEO with such an acute understanding of the clinical and academic world. He helped frame our ideas. Making them a commercial success is the difficult part. Yet Kevin makes it so easy and efficient."</blockquote>
-  <h3 style="margin-top:44px">Jonathan has over two decades of commercial leadership in medtech and healthcare technology.</h3>
-  <p>Commercial leader in the UK, Europe, the Middle East and emerging markets, from NHS adoption to international distributor networks.</p>
-  <ul>
-    <li>Head of International Sales at Nevro Medical for nine years, running a commercial organisation across 16 markets with a P&amp;L of more than $64M</li>
-    <li>Grew EMEA revenues from €3M to €10M. Built the UK operation from launch to about £2.5M in revenue and around 20% market share.</li>
-    <li>NHS adoption through Health Innovation Network engagement, most recently as UK Commercial Director at APOS Health, a NICE-recommended musculoskeletal platform</li>
-    <li>Chief executive of O2 Worx, a UK designer and manufacturer of hyperbaric oxygen therapy chambers</li>
-    <li>Founder of Barclay Harris Consulting, working with healthcare innovators on commercialisation since 2020</li>
-    <li>Earlier career in hospital sales with Vygon, Atrium Medical and Apatech (Baxter Healthcare)</li>
-  </ul>
+  <div class="profile">
+    <img class="photo" src="assets/kevin-kelley.jpg" alt="Kevin Kelley">
+    <div>
+      <h3>Kevin Kelley</h3>
+      <div class="role">Founder, chief executive and chief financial officer</div>
+      <p>Kevin has spent over two decades operating and advising early-stage companies, as a medtech founder, chief executive and chief financial officer in the US, the UK and the EU. He has raised capital from angel and institutional investors at early and growth stages, and led restructurings and turnarounds, including a division of a $3B health system.</p>
+      <p>His advisory work has run from concept to revenue in global markets.</p>
+      <div class="facts">
+        <div><b>3</b><span>exits</span></div>
+        <div><b>3</b><span>medical device patents</span></div>
+        <div><b>2</b><span>companies co-founded</span></div>
+        <div><b>5</b><span>product launches</span></div>
+      </div>
+      <blockquote>"I rarely come across a CEO with such an acute understanding of the clinical and academic world. He helped frame our ideas. Making them a commercial success is the difficult part. Yet Kevin makes it so easy and efficient."</blockquote>
+      <p class="attr"><a href="https://www.linkedin.com/in/jean-philippe-pignol-md-phd-928746111/">Jean-Philippe Pignol, MD, PhD</a>, Chair, Concure Oncology Scientific Advisory Board</p>
+    </div>
+  </div>
+
+  <div class="profile">
+    <div class="photo-slot">Photograph to follow</div>
+    <div>
+      <h3>Jonathan Penny</h3>
+      <div class="role">Commercial leader, medtech and healthcare technology</div>
+      <p>Jonathan has over two decades of commercial leadership across the UK, Europe, the Middle East and emerging markets. For nine years he was Head of International Sales at Nevro Medical, a global neuromodulation company, responsible for 16 markets and a P&amp;L of more than $64M. He grew EMEA revenues from €3M to €10M and built the UK business from launch.</p>
+      <p>Since 2020 he has run Barclay Harris Consulting, helping healthcare innovators turn clinical validation into commercial growth. Alongside it he led UK commercial operations at APOS Health, a NICE-recommended musculoskeletal platform, opening NHS accounts through the Health Innovation Networks, and was chief executive of O2 Worx, a UK maker of hyperbaric oxygen therapy chambers. His career began in hospital sales with Vygon, Atrium Medical and Apatech.</p>
+      <div class="facts">
+        <div><b>16</b><span>markets led at Nevro</span></div>
+        <div><b>€3M to €10M</b><span>EMEA revenue growth</span></div>
+        <div><b>~20%</b><span>UK market share from launch</span></div>
+      </div>
+    </div>
+  </div>
+
   <h3>Edinburgh is home</h3>
   <p>While Barclay Harris Kelley Consultants is based in Edinburgh, as a firm we work with founders across the UK and Ireland, and with US companies whose plan touches the UK, Ireland or the rest of the EU.</p>
 </div></section>
