@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Outside medtech · KSC Advisers</title>
+<title>Other markets · KSC Advisers</title>
 <meta name="description" content="Do you work with companies outside of medtech? Our work clusters by situation, not by sector. The commercial, operating and finance judgement of having led a diverse set of companies through their inflection points. You bring the domain expertise. We help you execute.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="KSC Advisers">
@@ -38,9 +38,11 @@
   header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid var(--gold)}
   .nav{display:flex;justify-content:space-between;align-items:center;height:72px;gap:20px}
   .brand{font-family:var(--serif);font-size:22px;color:inherit}
-  .links{display:flex;gap:28px;font-size:15px;font-weight:600}
-  .links a{border-bottom:1.5px solid var(--gold);padding-bottom:2px}
-  .links a.here{color:var(--gold)}
+  .links{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600;letter-spacing:.02em}
+  .links a{padding:6px 0 4px;border-bottom:2px solid transparent;opacity:.9;transition:opacity .15s,border-color .15s}
+  .links a:hover,.links a:focus-visible{opacity:1;border-bottom-color:var(--gold)}
+  .links a[aria-current="page"]{opacity:1;border-bottom-color:var(--gold)}
+  .links .sep{width:1px;height:18px;background:rgba(255,255,255,.35)}
 
   section{padding-block:104px}
   section.tan{background:var(--cream)}
@@ -150,8 +152,10 @@
     section{padding-block:64px}
     .lead{font-size:26px}
     .answer{font-size:21px}
-    .links{gap:18px;font-size:14px}
-    .links .wide{display:none}
+    .nav{flex-wrap:wrap;height:auto;padding-block:14px 10px;gap:6px 0}
+    .brand{flex:1 0 100%;font-size:20px;white-space:nowrap}
+    .links{gap:16px;font-size:13px}
+    .links .sep{height:14px}
     .exhibit{padding:24px 20px 6px}
     .ex-title{font-size:19px}
     .steps{display:block}
@@ -184,7 +188,7 @@
 
 <header><div class="wrap nav">
   <a class="brand" href="/">KSC Advisers</a>
-  <nav class="links" aria-label="Site"><a class="wide" href="mailto:kevin@kscadvisors.com">Email</a><a class="wide" href="https://www.linkedin.com/in/kevinkelley4">LinkedIn</a></nav>
+  <nav class="links" aria-label="Site"><a href="/">Home</a><a href="/outside-medtech.html" aria-current="page">Other markets</a><span class="sep" aria-hidden="true"></span><a href="mailto:kevin@kscadvisors.com">Email</a><a href="https://www.linkedin.com/in/kevinkelley4">LinkedIn</a></nav>
 </div></header>
 
 <section id="outside" class="tan"><div class="wrap">
