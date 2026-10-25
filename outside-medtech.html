@@ -38,6 +38,7 @@
   header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid var(--gold)}
   .nav{display:flex;justify-content:space-between;align-items:center;height:72px;gap:20px}
   .brand{font-family:var(--serif);font-size:22px;color:inherit}
+  .brand b{font-weight:700}
   .links{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600;letter-spacing:.02em}
   .links a{padding:6px 0 4px;border-bottom:2px solid transparent;opacity:.9;transition:opacity .15s,border-color .15s}
   .links a:hover,.links a:focus-visible{opacity:1;border-bottom-color:var(--gold)}
@@ -67,7 +68,7 @@
   .steps{display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr) minmax(0,1fr);column-gap:36px}
   .steps .head{display:contents}
   .steps .head span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted);padding-bottom:12px;border-bottom:2px solid var(--dark)}
-  .steps .head span:nth-child(3){color:var(--dark)}
+  .steps .head span:nth-child(3){color:var(--accent)}
   .steps .row{display:contents}
   .steps .row > *{padding:20px 0;border-bottom:1px solid var(--line)}
   .steps .row:last-child > *{border-bottom:0}
@@ -75,7 +76,7 @@
   .step .n{font-family:var(--sans);font-size:13px;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;min-width:22px}
   .step .t{font-family:var(--serif);font-size:20px;line-height:1.3;color:var(--dark)}
   .cell .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--muted);margin-bottom:6px;line-height:1.4}
-  .cell.med .k{color:var(--dark)}
+  .cell.med .k{color:var(--accent);font-weight:700}
   .cell p{font-size:16px;line-height:1.5;color:var(--ink-2)}
   .cell .who{margin-top:8px;font-size:14px;line-height:1.45;color:var(--muted)}
   .cell .who b{font-weight:600;color:var(--dark)}
@@ -131,6 +132,7 @@
   .btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--sans);font-size:17px;font-weight:600;line-height:1;padding:16px 32px;border-radius:10px;border:0}
   .btn:hover{background:#0A6A96}
   .btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  .cta-alt{margin-top:14px;font-size:14px;color:var(--muted)}
   footer{background:var(--cream);color:var(--muted);font-size:15px;line-height:1.7;border-top:1px solid var(--line-2)}
   footer .wrap{padding-block:30px 44px}
 
@@ -187,7 +189,7 @@
 <body>
 
 <header><div class="wrap nav">
-  <a class="brand" href="/">KSC Advisers</a>
+  <a class="brand" href="/"><b>KSC</b> Advisers</a>
   <nav class="links" aria-label="Site"><a href="/">Home</a><a href="/outside-medtech.html" aria-current="page">Other markets</a><span class="sep" aria-hidden="true"></span><a href="mailto:kevin@kscadvisors.com">Email</a><a href="https://www.linkedin.com/in/kevinkelley4">LinkedIn</a></nav>
 </div></header>
 
@@ -269,7 +271,7 @@
     <div class="ex-label" id="ex1-label">Exhibit</div>
     <div class="ex-title">The same seven steps in two industries at opposite ends of the regulatory scale. In e-commerce little stands between the idea and the customer; in medtech regulation adds a layer to each step, raises the risk and brings in specialists.</div>
     <div class="steps" role="table" aria-label="The seven steps, outside healthcare and in medtech">
-      <div class="head" role="row"><span role="columnheader">Any company</span><span role="columnheader">Products with low regulatory burden: what the market adds</span><span role="columnheader">Medtech: what regulation adds, and who comes in</span></div>
+      <div class="head" role="row"><span role="columnheader">Seven common steps</span><span role="columnheader">Products with low regulatory burden: what the market adds</span><span role="columnheader">Medtech: what regulation adds, and who comes in</span></div>
 
       <div class="row" role="row">
         <div class="step" role="cell"><span class="n">1</span><span class="t">An idea that solves a problem</span></div>
@@ -313,13 +315,12 @@
         <div class="cell med" role="cell"><div class="k">You may only say what was cleared</div><p>Claims limited to the approval. Reimbursement decides whether anyone buys.</p><div class="who"><b>Who comes in:</b> reimbursement, market access, sales</div></div>
       </div>
     </div>
-    <div class="ex-note">Ideas come from anywhere in either world: a shopper with a frustration, a side project, a developer, a retailer; a clinician with a problem, a university lab, a patient or carer, an industry team. An existing product done better, or a data set, in both.</div>
   </figure>
 </div></section>
 
 <section class="tan"><div class="wrap">
   <div class="eyebrow">The market view</div>
-  <h2 class="lead">Medtech innovation goes off target because no one at the start holds the market view, <span class="turn">and each layer of regulation hides it further.</span></h2>
+  <h2 class="lead">Medtech innovation often goes off target from the beginning when it lacks a cohesive market view, <span class="turn">and each new layer of regulation hides it further.</span></h2>
 
   <figure class="exhibit" aria-labelledby="ex2-label">
     <div class="ex-label" id="ex2-label">Exhibit</div>
@@ -354,7 +355,7 @@
     <div class="mv-close">This is what causes innovation to go off target so quickly. It is why the plan starts with the patient and their provider, who approves, who buys and who pays, and works back to the science: the market view has to be put in at the start, because nothing in the process will supply it later.</div>
     <div class="mv-close" style="border-top:0;margin-top:18px;padding-top:0">For all sustainable companies, the plan begins with who consumes the product, who approves the purchase, and who pays.</div>
   </figure>
-  <div class="cta"><a class="btn" href="mailto:kevin@kscadvisors.com?subject=Outside%20medtech%3A%20let%27s%20talk&body=Company%3A%20%0ASector%3A%20%0AThe%20moment%20we%20are%20at%3A%20%0A">Start the conversation</a></div>
+  <div class="cta"><a class="btn" href="mailto:kevin@kscadvisors.com?subject=Outside%20medtech%3A%20let%27s%20talk&body=Company%3A%20%0ASector%3A%20%0AThe%20moment%20we%20are%20at%3A%20%0A">Start the conversation</a><div class="cta-alt">or write to kevin@kscadvisors.com</div></div>
 </div></section>
 
 <section class="close"><div class="wrap">
