@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outside medtech · KSC Advisers</title>
+<meta name="description" content="Do you work with companies outside of medtech? Our work clusters by situation, not by sector. The commercial, operating and finance judgement of having led a diverse set of companies through their inflection points. You bring the domain expertise. We help you execute.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KSC Advisers">
+<meta property="og:title" content="Do you work with companies outside of medtech? · KSC Advisers">
+<meta property="og:description" content="Do you work with companies outside of medtech? Our work clusters by situation, not by sector. The commercial, operating and finance judgement of having led a diverse set of companies through their inflection points. You bring the domain expertise. We help you execute.">
+<meta property="og:url" content="https://kscadvisors.com/outside-medtech.html">
+<meta property="og:image" content="https://kscadvisors.com/assets/share-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://kscadvisors.com/outside-medtech.html">
+<style>
+  /* Layout: the KSC site's own system (v3.3 dev source, brand standard 1.12). Single light look, as on the live site. Cream argument section with the seven-steps exhibit; white market-view section; cream situations exhibit; dark teal close. */
+  :root{
+    --dark:#1F4042; --accent:#07567A; --gold:#D4A648;
+    --cream:#F5F3EE; --white:#FFFFFF;
+    --ink:#222222; --ink-2:#2A2A2A; --muted:#555555;
+    --line:#E2DED4; --line-2:#D8D4CA;
+    --teal-1:#DCE6EA; --teal-2:#B9CDD4; --teal-3:#8FAEB8; --teal-4:#6A95A3; --teal-5:#3F7384;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--white);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  .wrap{max-width:1160px;margin:0 auto;padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}
+  h1,h2,h3{font-family:var(--serif);font-weight:normal;letter-spacing:-.01em;text-wrap:balance}
+
+
+  header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:50;border-bottom:3px solid var(--gold)}
+  .nav{display:flex;justify-content:space-between;align-items:center;height:72px;gap:20px}
+  .brand{font-family:var(--serif);font-size:22px;color:inherit}
+  .links{display:flex;gap:28px;font-size:15px;font-weight:600}
+  .links a{border-bottom:1.5px solid var(--gold);padding-bottom:2px}
+  .links a.here{color:var(--gold)}
+
+  section{padding-block:104px}
+  section.tan{background:var(--cream)}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--dark);margin-bottom:22px}
+  .lead{font-size:34px;line-height:1.2;max-width:900px;margin:0 0 24px;color:var(--dark)}
+  .lead .turn{color:var(--accent)}
+  .answer{font-family:var(--serif);font-size:26px;line-height:1.3;color:var(--dark);max-width:900px;margin:-6px 0 22px}
+  .answer .turn{color:var(--accent)}
+  .body{max-width:660px}
+  .body p{color:var(--ink-2)}
+  .body p + p{margin-top:16px}
+  .body p strong{color:var(--ink);font-weight:600}
+
+  /* Exhibit frame */
+  .exhibit{margin:48px 0 0;background:var(--white);border-top:3px solid var(--dark);border-radius:0 0 3px 3px;padding:30px 40px 12px}
+  section:not(.tan) .exhibit{background:var(--cream)}
+  .ex-label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--dark);margin-bottom:8px}
+  .ex-title{font-family:var(--serif);font-size:21px;line-height:1.35;color:var(--dark);max-width:860px;margin-bottom:26px}
+  .ex-note{font-size:15px;line-height:1.55;color:var(--muted);margin:22px 0 14px;max-width:860px}
+
+  /* Seven steps exhibit: rows are the steps, columns are the two worlds */
+  .steps{display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr) minmax(0,1fr);column-gap:36px}
+  .steps .head{display:contents}
+  .steps .head span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted);padding-bottom:12px;border-bottom:2px solid var(--dark)}
+  .steps .head span:nth-child(3){color:var(--dark)}
+  .steps .row{display:contents}
+  .steps .row > *{padding:20px 0;border-bottom:1px solid var(--line)}
+  .steps .row:last-child > *{border-bottom:0}
+  .step{display:flex;gap:14px;align-items:baseline}
+  .step .n{font-family:var(--sans);font-size:13px;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;min-width:22px}
+  .step .t{font-family:var(--serif);font-size:20px;line-height:1.3;color:var(--dark)}
+  .cell .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--muted);margin-bottom:6px;line-height:1.4}
+  .cell.med .k{color:var(--dark)}
+  .cell p{font-size:16px;line-height:1.5;color:var(--ink-2)}
+  .cell .who{margin-top:8px;font-size:14px;line-height:1.45;color:var(--muted)}
+  .cell .who b{font-weight:600;color:var(--dark)}
+
+  /* Market view exhibit */
+  .mv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);column-gap:48px;row-gap:28px;align-items:start}
+  .mv .col > .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--dark);padding-bottom:10px;border-bottom:2px solid var(--line-2);margin-bottom:22px}
+  .mv .col.med > .k{border-bottom-color:var(--gold)}
+  .chain{display:flex;align-items:stretch;min-height:170px}
+  .box{padding:22px 20px;display:flex;flex-direction:column;justify-content:flex-start;min-width:0}
+  .box .t{font-family:var(--serif);font-size:18px;line-height:1.3;color:var(--dark);margin-bottom:8px}
+  .box p{font-size:14px;line-height:1.45;color:var(--ink-2)}
+  .box.start{background:var(--white);border-top:3px solid var(--dark);flex:0 0 42%}
+  section:not(.tan) .box.start{background:var(--white)}
+  .box.market{background:var(--dark);color:#fff;border-top:3px solid var(--gold);flex:0 0 36%;justify-content:center;align-items:center;text-align:center}
+  .box.market .t{color:#fff;margin:0}
+  .between{flex:1 1 auto;display:flex;align-items:center;justify-content:center;position:relative;min-width:0}
+  .between::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--gold)}
+  .between span{position:relative;background:var(--white);padding:0 10px;font-size:13px;font-style:italic;color:var(--muted);white-space:nowrap}
+  .chain.med .box.start{flex:0 0 40%}
+  .layers{flex:1 1 auto;display:flex;min-width:0;gap:2px}
+  .layer{flex:1 1 0;min-width:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:14px}
+  .layer span{writing-mode:vertical-rl;transform:rotate(180deg);font-size:11px;letter-spacing:.06em;color:#fff;white-space:nowrap}
+  .layer:nth-child(1){background:var(--teal-1)} .layer:nth-child(1) span{color:var(--dark)}
+  .layer:nth-child(2){background:var(--teal-2)} .layer:nth-child(2) span{color:var(--dark)}
+  .layer:nth-child(3){background:var(--teal-3)}
+  .layer:nth-child(4){background:var(--teal-4)}
+  .layer:nth-child(5){background:var(--teal-5)}
+  .layer:nth-child(6){background:var(--accent)}
+  .chain.med .box.market{flex:0 0 22%}
+  .mv .cap{font-size:15px;line-height:1.5;color:var(--ink-2);margin-top:14px}
+  .mv-close{border-top:1px solid var(--line-2);margin-top:30px;padding-top:24px;font-family:var(--serif);font-size:19px;line-height:1.5;color:var(--dark);max-width:960px}
+
+  /* Situations exhibit (draft 0.6, unchanged) */
+  .grid{display:grid;grid-template-columns:minmax(0,300px) minmax(0,190px) minmax(0,1fr);column-gap:40px}
+  .head{display:contents}
+  .grid .head span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted);padding-bottom:12px;border-bottom:2px solid var(--dark)}
+  .grid .row{display:contents}
+  .grid .row > *{padding:22px 0 22px;border-bottom:1px solid var(--line)}
+  .grid .row:last-child > *{border-bottom:0}
+  .sit{font-family:var(--serif);font-size:20px;line-height:1.3;color:var(--dark)}
+  .sec{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--dark);padding-top:27px!important;line-height:1.5}
+  .rec{list-style:none}
+  .rec li{position:relative;padding-left:20px;font-size:16px;line-height:1.5;color:var(--ink-2)}
+  .rec li + li{margin-top:8px}
+  .rec li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;background:var(--gold)}
+  .rec .fig{color:var(--dark);font-weight:600;font-variant-numeric:tabular-nums}
+
+  .close{background:var(--dark);color:#fff}
+  .close .lead{color:#fff;max-width:820px}
+  .close .lead .turn{color:var(--gold)}
+  .cta{margin-top:40px;text-align:center}
+  .btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--sans);font-size:17px;font-weight:600;line-height:1;padding:16px 32px;border-radius:10px;border:0}
+  .btn:hover{background:#0A6A96}
+  .btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  footer{background:var(--cream);color:var(--muted);font-size:15px;line-height:1.7;border-top:1px solid var(--line-2)}
+  footer .wrap{padding-block:30px 44px}
+
+  @media (max-width:980px){
+    .steps{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28px}
+    .steps .head span:nth-child(1){display:none}
+    .steps .row > .step{grid-column:1 / -1;padding-bottom:10px;border-bottom:0}
+    .steps .row > .cell{padding-top:0}
+    .mv{grid-template-columns:1fr}
+    .grid{grid-template-columns:minmax(0,240px) minmax(0,1fr);column-gap:32px}
+    .grid .head span:nth-child(2){display:none}
+    .grid .head span:nth-child(3){grid-column:2}
+    .grid .row > .sit{grid-column:1;grid-row:span 2}
+    .grid .row > .sec{grid-column:2;padding:22px 0 8px!important;border-bottom:0}
+    .grid .row > .rec{grid-column:2;padding-top:0}
+  }
+  @media (max-width:760px){
+    .wrap{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+    section{padding-block:64px}
+    .lead{font-size:26px}
+    .answer{font-size:21px}
+    .links{gap:18px;font-size:14px}
+    .links .wide{display:none}
+    .exhibit{padding:24px 20px 6px}
+    .ex-title{font-size:19px}
+    .steps{display:block}
+    .steps .head{display:none}
+    .steps .row{display:block;padding:18px 0;border-bottom:1px solid var(--line)}
+    .steps .row:last-child{border-bottom:0}
+    .steps .row > *{padding:0;border-bottom:0}
+    .steps .row > .step{margin-bottom:12px}
+    .steps .row > .cell + .cell{margin-top:14px}
+    .cell p{font-size:15px}
+    .chain{min-height:150px}
+    .box{padding:16px 14px}
+    .box .t{font-size:16px}
+    .box p{font-size:13px}
+    .between span{font-size:12px}
+    .layer span{font-size:10px}
+    .mv-close{font-size:17px}
+    .grid{display:block}
+    .grid .head{display:none}
+    .grid .row{display:block;padding:20px 0;border-bottom:1px solid var(--line)}
+    .grid .row:last-child{border-bottom:0}
+    .grid .row > *{padding:0;border-bottom:0}
+    .sec{display:block;padding:0!important;margin:0 0 6px}
+    .sit{display:block;font-size:19px;margin-bottom:12px}
+    .rec li{font-size:15px}
+  }
+</style>
+</head>
+<body>
+
+<header><div class="wrap nav">
+  <a class="brand" href="/">KSC Advisers</a>
+  <nav class="links" aria-label="Site"><a class="wide" href="mailto:kevin@kscadvisors.com">Email</a><a class="wide" href="https://www.linkedin.com/in/kevinkelley4">LinkedIn</a></nav>
+</div></header>
+
+<section id="outside" class="tan"><div class="wrap">
+  <div class="eyebrow">Situations outside medtech</div>
+  <h1 class="lead">Do you work with companies outside of medtech?</h1>
+  <p class="answer">Our work clusters by situation, <span class="turn">not by sector.</span></p>
+  <div class="body">
+    <p>The moments that decide a company's course recur across markets: a raise, a launch, a restructuring, a move across borders, an exit. <strong>We bring the commercial, operating and finance judgement of having led a diverse set of companies through their inflection points.</strong> You bring the domain expertise. We help you execute. We are in your corner.</p>
+  </div>
+
+  <figure class="exhibit" aria-labelledby="ex3-label">
+    <div class="ex-label" id="ex3-label">Exhibit</div>
+    <div class="grid" role="table" aria-label="Situations, sectors and record">
+      <div class="head" role="row"><span role="columnheader">Situation</span><span role="columnheader">Sector</span><span role="columnheader">Record</span></div>
+
+      <div class="row" role="row">
+        <h3 class="sit" role="cell">Restarting a venture and taking it to market</h3>
+        <div class="sec" role="cell">Clean technology</div>
+        <ul class="rec" role="cell">
+          <li>Prototypes and IP turned into an award-winning product</li>
+          <li>A joint venture with a European partner</li>
+          <li><span class="fig">$5M</span> raised</li>
+          <li>A <span class="fig">5x</span> offer from a Fortune 100 competitor</li>
+        </ul>
+      </div>
+
+      <div class="row" role="row">
+        <h3 class="sit" role="cell">Restructuring and turnaround</h3>
+        <div class="sec" role="cell">Healthcare services</div>
+        <ul class="rec" role="cell">
+          <li>The home health division of a five-hospital, <span class="fig">$3B</span> health system</li>
+          <li>Finance, operations and reporting restructured</li>
+          <li>Projected losses reduced by <span class="fig">half</span>, ahead of the division's acquisition</li>
+        </ul>
+      </div>
+
+      <div class="row" role="row">
+        <h3 class="sit" role="cell">Scaling a healthcare services model</h3>
+        <div class="sec" role="cell">Healthcare services</div>
+        <ul class="rec" role="cell">
+          <li>Launched a new service model</li>
+          <li>Grew sites from <span class="fig">two</span> service sites to <span class="fig">40</span></li>
+          <li><span class="fig">$7M</span> venture capital raised</li>
+        </ul>
+      </div>
+
+      <div class="row" role="row">
+        <h3 class="sit" role="cell">Financing and developing real assets</h3>
+        <div class="sec" role="cell">Commercial real estate</div>
+        <ul class="rec" role="cell">
+          <li>A <span class="fig">$250M</span> portfolio refinanced</li>
+          <li>A <span class="fig">$30M+</span> office building taken from acquisition through lease-up, on time and within budget</li>
+        </ul>
+      </div>
+
+      <div class="row" role="row">
+        <h3 class="sit" role="cell">Structure across borders</h3>
+        <div class="sec" role="cell">Cross-border</div>
+        <ul class="rec" role="cell">
+          <li>Operated <span class="fig">two</span> US-based companies with operations in the UK and EU</li>
+          <li>Advising on the spinout of a growth-stage subsidiary from a global, non-US parent</li>
+          <li>Advising on the inversion of an ownership structure from outside the US to the US</li>
+        </ul>
+      </div>
+    </div>
+  </figure>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow">The same seven steps</div>
+  <h2 class="lead">Almost every company follows the same seven steps. <span class="turn">Regulation adds a layer to each one.</span></h2>
+  <div class="body">
+    <p>An idea that solves a problem. How big the problem is. Develop the solution, finance it, make it, distribute it, sell and market it. <strong>The steps are the same in any company.</strong> The regulatory layer is what turns a basic step into a decision with a cost, a timeline and a specialist attached, and it is why the order of the decisions matters.</p>
+    <p>Regulation reaches every industry; it is a matter of degree. In e-commerce it is consumer law and advertising standards, and the market remains the judge that matters, answering in weeks. In medtech a regulator, a committee and a payer each have to answer first, and each answer takes years and a specialist.</p>
+  </div>
+
+  <figure class="exhibit" aria-labelledby="ex1-label">
+    <div class="ex-label" id="ex1-label">Exhibit</div>
+    <div class="ex-title">The same seven steps in two industries at opposite ends of the regulatory scale. In e-commerce little stands between the idea and the customer; in medtech regulation adds a layer to each step, raises the risk and brings in specialists.</div>
+    <div class="steps" role="table" aria-label="The seven steps, outside healthcare and in medtech">
+      <div class="head" role="row"><span role="columnheader">Any company</span><span role="columnheader">Products with low regulatory burden: what the market adds</span><span role="columnheader">Medtech: what regulation adds, and who comes in</span></div>
+
+      <div class="row" role="row">
+        <div class="step" role="cell"><span class="n">1</span><span class="t">An idea that solves a problem</span></div>
+        <div class="cell" role="cell"><div class="k">Nothing to approve</div><p>Build it and see if anyone wants it. Change it tomorrow.</p></div>
+        <div class="cell med" role="cell"><div class="k">Intended use</div><p>The idea has to be stated as a claim before it is a product. The claim is regulated.</p><div class="who"><b>Who comes in:</b> IP counsel</div></div>
+      </div>
+
+      <div class="row" role="row">
+        <div class="step" role="cell"><span class="n">2</span><span class="t">How big is the problem</span></div>
+        <div class="cell" role="cell"><div class="k">The customer is the payer</div><p>Count the people with the problem and the money. One decision maker.</p></div>
+        <div class="cell med" role="cell"><div class="k">Who approves, who buys, who pays</div><p>The market is not the patient count. It is the clinician, the committee and the payer.</p><div class="who"><b>Who comes in:</b> market research, health economics</div></div>
+      </div>
+
+      <div class="row" role="row">
+        <div class="step" role="cell"><span class="n">3</span><span class="t">Develop the solution</span></div>
+        <div class="cell" role="cell"><div class="k">Ship, measure, iterate</div><p>A working version in weeks. The evidence is whether people buy.</p></div>
+        <div class="cell med" role="cell"><div class="k">Evidence and pathway</div><p>Design controls, a risk file, clinical evidence sized to the claim, a regulatory route.</p><div class="who"><b>Who comes in:</b> regulatory, quality, clinical operations</div></div>
+      </div>
+
+      <div class="row" role="row">
+        <div class="step" role="cell"><span class="n">4</span><span class="t">Finance it</span></div>
+        <div class="cell" role="cell"><div class="k">Revenue early</div><p>Months to first sale. The round buys growth, not permission.</p></div>
+        <div class="cell med" role="cell"><div class="k">The pathway sets the raise</div><p>Years before revenue. The round buys milestones, not runway.</p><div class="who"><b>Who comes in:</b> finance, legal, investors who know the sector</div></div>
+      </div>
+
+      <div class="row" role="row">
+        <div class="step" role="cell"><span class="n">5</span><span class="t">Make it</span></div>
+        <div class="cell" role="cell"><div class="k">Off the shelf</div><p>Hosting, payments and fulfilment are rented. No audit.</p></div>
+        <div class="cell med" role="cell"><div class="k">Quality system</div><p>ISO 13485, supplier controls, audited. Manufacturing is part of the approval.</p><div class="who"><b>Who comes in:</b> contract manufacturer, quality</div></div>
+      </div>
+
+      <div class="row" role="row">
+        <div class="step" role="cell"><span class="n">6</span><span class="t">Distribute it</span></div>
+        <div class="cell" role="cell"><div class="k">Open channel</div><p>A website, a marketplace, an app store. Anyone can list.</p></div>
+        <div class="cell med" role="cell"><div class="k">Controlled channel</div><p>Licensed distributors, logistics rules, hospital contracting and purchasing committees.</p><div class="who"><b>Who comes in:</b> distribution, logistics, legal</div></div>
+      </div>
+
+      <div class="row" role="row">
+        <div class="step" role="cell"><span class="n">7</span><span class="t">Sell and market it</span></div>
+        <div class="cell" role="cell"><div class="k">Say what you like, within consumer law</div><p>Advertising standards and returns rules. Price is yours to set.</p></div>
+        <div class="cell med" role="cell"><div class="k">You may only say what was cleared</div><p>Claims limited to the approval. Reimbursement decides whether anyone buys.</p><div class="who"><b>Who comes in:</b> reimbursement, market access, sales</div></div>
+      </div>
+    </div>
+    <div class="ex-note">Ideas come from anywhere in either world: a shopper with a frustration, a side project, a developer, a retailer; a clinician with a problem, a university lab, a patient or carer, an industry team. An existing product done better, or a data set, in both.</div>
+  </figure>
+</div></section>
+
+<section class="tan"><div class="wrap">
+  <div class="eyebrow">The market view</div>
+  <h2 class="lead">Medtech innovation goes off target because no one at the start holds the market view, <span class="turn">and each layer of regulation hides it further.</span></h2>
+
+  <figure class="exhibit" aria-labelledby="ex2-label">
+    <div class="ex-label" id="ex2-label">Exhibit</div>
+    <div class="ex-title">For products with low regulatory burden, the person who has the problem is the person who will buy the answer. In medtech six layers sit between the innovation and the market.</div>
+    <div class="mv">
+      <div class="col">
+        <div class="k">Products with low regulatory burden</div>
+        <div class="chain">
+          <div class="box start"><div class="t">A consumer or user</div><p>They have the problem. They see the market.</p></div>
+          <div class="between"><span>nothing in between</span></div>
+          <div class="box market"><div class="t">The market</div></div>
+        </div>
+        <p class="cap">The idea comes from the market. The person who has the problem is the person who will buy the answer.</p>
+      </div>
+      <div class="col med">
+        <div class="k">Medtech</div>
+        <div class="chain med">
+          <div class="box start"><div class="t">An innovation</div><p>It may or may not have been designed to solve a problem. The inventor, the ecosystem, the specialists and the early funders usually do not have a strong market view.</p></div>
+          <div class="layers" aria-label="Six layers between the innovation and the market">
+            <div class="layer"><span>Intended use</span></div>
+            <div class="layer"><span>Evidence</span></div>
+            <div class="layer"><span>Pathway</span></div>
+            <div class="layer"><span>Quality system</span></div>
+            <div class="layer"><span>Channel</span></div>
+            <div class="layer"><span>Reimbursement</span></div>
+          </div>
+          <div class="box market"><div class="t">The market</div></div>
+        </div>
+        <p class="cap">Each layer obscures the market view a little more, until it is cleared away. By then the claims are fixed and the money is committed.</p>
+      </div>
+    </div>
+    <div class="mv-close">This is what causes innovation to go off target so quickly. It is why the plan starts with the patient and their provider, who approves, who buys and who pays, and works back to the science: the market view has to be put in at the start, because nothing in the process will supply it later.</div>
+    <div class="mv-close" style="border-top:0;margin-top:18px;padding-top:0">For all sustainable companies, the plan begins with who consumes the product, who approves the purchase, and who pays.</div>
+  </figure>
+  <div class="cta"><a class="btn" href="mailto:kevin@kscadvisors.com?subject=Outside%20medtech%3A%20let%27s%20talk&body=Company%3A%20%0ASector%3A%20%0AThe%20moment%20we%20are%20at%3A%20%0A">Start the conversation</a></div>
+</div></section>
+
+<section class="close"><div class="wrap">
+  <h2 class="lead">If you are asking whether we work in your sector, start with the moment your company is at. <span class="turn">Let's talk.</span></h2>
+</div></section>
+
+<footer><div class="wrap">
+  KSC Advisers · Edinburgh, UK<br>
+  © 2026 KSC Advisers Ltd
+</div></footer>
+
+</body>
+</html>
