@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy notice | KSC Advisers</title>
+<meta name="description" content="What personal data KSC Advisers Ltd holds, why, and what you can ask us to do.">
+<link rel="icon" href="favicon.ico">
+<style>
+
+  :root{
+
+    --dark:#1F4042;
+    --accent:#07567A;
+    --gold:#B8892B; --gold-c:#9C7420;
+    --cream:#F5F3EE;
+    --white:#FFFFFF;
+    --on-dark:#FFFFFF;
+    --ink:#222222; --ink-2:#2A2A2A; --muted:#555555; --meta:#6B7780;
+    --blue-ex:#3B92CC;
+    --line:#E2DED4; --line-2:#D8D4CA;
+    --serif:Georgia,"Times New Roman",serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{color-scheme:light;scroll-behavior:smooth;scroll-padding-top:80px}
+  body{background:var(--white);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 40px}
+  h1,h2,h3{font-family:var(--serif);font-weight:normal;letter-spacing:-.01em}
+  section{padding:104px 0}
+  section.grey{background:var(--cream)}
+  section.tan{background:var(--cream)}
+  .eyebrow{font-size:15px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:22px}
+
+  .lead{font-size:34px;line-height:1.2;max-width:900px;margin:0 0 24px}
+  .lead{color:var(--dark)}
+  .lead .turn{color:var(--accent)}
+  #problem .lead .turn{color:var(--dark)}
+  .body{max-width:660px}
+  .body p{margin:0 0 16px;color:var(--ink-2)}
+  .body p strong{color:var(--ink);font-weight:600}
+
+
+  header{background:var(--dark);color:#fff;position:sticky;top:0;z-index:50;transition:background .25s,color .25s}
+  header.scrolled{background:var(--white);color:var(--dark);box-shadow:0 1px 0 var(--dark)}
+  .nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+  .brand{font-family:var(--serif);font-size:22px;color:inherit}
+  .brand b{font-weight:700}
+  .links{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600;letter-spacing:.02em}
+  .links a{padding:6px 0 4px;border-bottom:2px solid transparent;opacity:.9;transition:opacity .15s,border-color .15s}
+  .links a:hover,.links a:focus-visible{opacity:1;border-bottom-color:currentColor}
+  .links a[aria-current="page"]{opacity:1;border-bottom-color:currentColor}
+  header.scrolled .links a:hover,header.scrolled .links a:focus-visible,header.scrolled .links a[aria-current="page"]{border-bottom-color:var(--accent)}
+  .links .sep{width:1px;height:18px;background:rgba(255,255,255,.35)}
+  header.scrolled .links .sep{background:var(--line-2)}
+
+
+  .hero{background:var(--white);color:var(--ink);padding:72px 0 64px}
+  .hero h1{font-size:46px;line-height:1.14;max-width:960px;margin:0 0 26px;color:var(--dark)}
+  .hero h1:last-child{margin-bottom:0}
+  .hero p{font-size:19px;color:var(--ink-2);max-width:800px;font-family:var(--serif);font-style:italic}
+
+
+  .uc{display:grid;grid-template-columns:280px 1fr;gap:56px;margin-top:40px;align-items:start}
+  .items{list-style:none;margin:0;border-top:2px solid var(--dark);counter-reset:uc}
+  .items li{display:grid;grid-template-columns:48px 1fr;gap:12px;padding:15px 0;border-bottom:1px solid var(--line);font-family:var(--sans);font-size:16px;line-height:1.5;color:var(--ink-2);counter-increment:uc;margin:0}
+  .items li::before{content:counter(uc,decimal-leading-zero);font:700 13px/1.85 var(--sans);letter-spacing:.06em;color:var(--accent)}
+
+  .stat{font-family:var(--serif);font-size:24px;line-height:1.25;color:var(--dark);max-width:760px;border-left:3px solid var(--accent);padding-left:22px;margin:0 0 34px}
+
+  blockquote{font-family:var(--serif);font-size:21px;line-height:1.45;max-width:660px;margin:26px 0 10px;padding:22px 26px;background:var(--white);border-left:3px solid var(--accent);border-radius:0 3px 3px 0}
+  .attr{font-size:14px;color:var(--ink-2)}
+  .attr a{border-bottom:1px solid var(--line)}
+
+
+  .exhibit{max-width:760px;margin:40px 0 36px;background:var(--white);border-top:3px solid var(--dark);padding:30px 40px 30px;border-radius:0 0 3px 3px}
+  .ex-label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:8px}
+  .ex-title{font-size:24px;line-height:1.3;color:var(--dark);max-width:760px;margin:0 0 30px}
+  .row-note{font-size:15.5px;line-height:1.6;color:var(--ink-2);margin:20px 0 0;max-width:820px}
+  .exhibit.pair .col-head{margin-bottom:20px}
+  .exhibit.pair{max-width:none;background:var(--cream);padding:30px 40px 34px}
+  .exhibit.pair .ex-title{max-width:none;margin-bottom:26px}
+  .col-head{font-family:var(--serif);font-size:19px;line-height:1.3;color:var(--dark);margin:0 0 4px}
+  @media (max-width:900px){
+    .exhibit.pair{padding:24px 20px}
+  }
+
+
+  .close{background:var(--white);color:var(--ink)}
+  .close .lead{color:var(--dark)}
+  .close p{color:var(--ink-2);max-width:660px;margin-bottom:26px}
+  .cta{display:inline-flex;align-items:center;gap:30px;font-weight:600}
+  .cta .btn{display:inline-block;background:var(--accent);color:#fff;font-size:17px;line-height:1;padding:16px 32px;border-radius:10px}
+  .cta .btn:hover{background:#0A6A96}
+  .cta-alt{margin-top:16px;font-size:14px;color:var(--muted)}
+  footer{background:var(--dark);color:rgba(255,255,255,.88);padding:8px 0 9px;font-size:clamp(6.5px,2.1vw,12px);line-height:1.5}
+  footer a{color:#fff;border-bottom:1px solid rgba(255,255,255,.55);padding-bottom:1px}
+  .foot{display:flex;flex-wrap:nowrap;align-items:baseline;gap:0 10px;white-space:nowrap}
+  .foot span{white-space:nowrap}
+  @media (max-width:760px){.foot{gap:0 3px}}
+
+  @media (max-width:760px){
+    .exhibit{padding:24px 20px}
+    .ex-title{font-size:20px}
+    .wrap{padding:0 20px}
+    section{padding:64px 0}
+    .hero{padding:48px 0 44px}
+    .hero h1{font-size:32px}
+    .lead{font-size:26px}
+    .nav{flex-wrap:wrap;height:auto;padding-block:14px 10px;gap:6px 0}
+    .brand{flex:1 0 100%;font-size:20px;white-space:nowrap}
+    .links{gap:16px;font-size:13px}
+    .links .sep{height:14px}
+    .items li{font-size:15px;grid-template-columns:38px 1fr}
+    .stat{font-size:20px}
+  }
+
+  .preview{background:var(--cream);color:var(--muted);font-size:12px;letter-spacing:.04em;padding:7px 0;border-bottom:1px solid var(--line)}
+  .grp{position:relative}
+  .grp > button{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;border-bottom:2px solid transparent;padding:6px 0 4px;cursor:pointer;opacity:.9;display:inline-flex;align-items:center;gap:7px}
+  .grp > button::after{content:"";border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;margin-top:1px}
+  .grp .sub{display:none;position:absolute;left:-18px;top:100%;min-width:230px;background:var(--white);color:var(--dark);border:1px solid var(--line-2);border-top:2px solid var(--dark);padding:8px 0;z-index:60}
+  .figs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:36px 0 0;border-top:2px solid var(--dark)}
+  .figs > div{padding:20px 26px 0;border-left:1px solid var(--line-2)}
+  .figs > div:first-child{padding-left:0;border-left:0}
+  .figs b{display:block;font-family:var(--serif);font-weight:normal;font-size:44px;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums;margin-bottom:10px}
+  .figs span{display:block;font-size:15px;line-height:1.45;color:var(--ink-2);max-width:240px}
+  .trig{margin:72px 0 0;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:64px;align-items:start}
+  .trig .say{font-family:var(--serif);font-size:26px;line-height:1.2;color:var(--dark);margin:0 0 22px}
+  .trig .lede p{margin:0 0 14px;color:var(--ink-2);max-width:460px}
+  .trig .lede p strong{color:var(--ink);font-weight:600}
+  .model{margin:44px 0 0;border-top:2px solid var(--dark)}
+  .mrow{display:grid;grid-template-columns:150px minmax(0,1fr);gap:40px;padding:30px 0;border-bottom:1px solid var(--line-2)}
+  .mrow > .tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--accent);padding-top:5px}
+  .mrow .q{font-family:var(--serif);font-size:24px;line-height:1.3;color:var(--dark);margin:0 0 6px}
+  .more{display:inline-block;font-size:15px;font-weight:600;color:var(--accent);border-bottom:1.5px solid currentColor;padding-bottom:2px}
+  /* Building in medtech exhibit */
+  .standfirst{font-family:var(--serif);font-size:21px;line-height:1.4;color:var(--dark);max-width:760px;margin:0 0 36px;padding-bottom:28px;border-bottom:1px solid var(--line-2)}
+  @media (max-width:760px){.standfirst{font-size:18px;margin-bottom:28px;padding-bottom:22px}}
+  .range{font-family:var(--serif);font-size:24px;line-height:1.3;color:var(--dark);max-width:820px;margin:56px 0 0}
+  .qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:36px 0 0}
+  .qslot{border:1px dashed var(--line-2);background:var(--white);padding:28px 26px;border-radius:3px;display:flex;flex-direction:column;min-height:200px}
+  .qslot p{font-family:var(--serif);font-size:19px;line-height:1.45;color:var(--muted);margin:0 0 20px}
+  .qslot small{margin-top:auto;font-size:13px;line-height:1.5;color:var(--muted)}
+  .cta{flex-wrap:wrap;gap:16px 16px}
+  @media (max-width:980px){
+    .trig{grid-template-columns:1fr;gap:36px}
+    .qgrid{grid-template-columns:1fr;gap:18px}
+    .qslot{min-height:0}
+  }
+  @media (max-width:760px){
+    .figs{grid-template-columns:1fr}
+    .figs > div{padding:18px 0;border-left:0;border-bottom:1px solid var(--line-2)}
+    .figs b{font-size:36px}
+    .trig{margin-top:48px}
+    .trig .say{font-size:22px}
+    .mrow{grid-template-columns:1fr;gap:10px;padding:24px 0}
+    .range{font-size:20px;margin-top:40px}
+    .links{flex-wrap:wrap;row-gap:4px}
+  }
+
+  .close.tan{background:var(--cream)}
+  .items.plain{border-top:0}
+  .items.plain li{grid-template-columns:1fr;padding:13px 0}
+  .items.plain li:first-child{padding-top:0}
+  .items.plain li::before{content:none}
+  .items.plain li .more{justify-self:start;margin-top:6px}
+
+  .srows{margin:0 0 24px}
+  .mrow .q + .srows{margin-top:22px;border-top:1px solid var(--line-2)}
+  .srow{display:grid;grid-template-columns:230px minmax(0,1fr);gap:36px;padding:22px 0;border-bottom:1px solid var(--line-2)}
+  .srows .srow:first-child{padding-top:0}
+  .mrow .q + .srows .srow:first-child{padding-top:22px}
+  .srow .n{display:block;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--accent);margin-bottom:8px;font-variant-numeric:tabular-nums}
+  .srow h4{font-family:var(--serif);font-weight:normal;font-size:22px;line-height:1.25;color:var(--dark);margin:0 0 4px}
+  .srow .sq{font-family:var(--serif);font-size:16px;color:var(--accent);margin:0}
+  .srow > p{font-size:16px;line-height:1.6;color:var(--ink-2);max-width:600px;margin:0}
+  @media (max-width:760px){.srow{grid-template-columns:1fr;gap:10px;padding:20px 0}}
+
+  .trig{margin-top:56px;padding-top:36px;border-top:1px solid var(--line-2);gap:56px}
+  .trig .say{margin:0}
+  .trig .lede p{max-width:560px}
+  .trig .lede p:last-child{margin-bottom:0}
+  @media (max-width:900px){.trig{gap:20px}}
+  @media (max-width:760px){.trig{border-top:0;padding-top:0;margin-top:36px}}
+
+  .lanes{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px}
+  .lanes .panel{display:flex;flex-direction:column}
+  .lanes .col-head{margin-bottom:14px}
+  .tracks{position:relative;padding:6px 0 0}
+  .trk{display:grid;grid-template-columns:104px minmax(0,1fr);align-items:center;gap:16px;height:46px}
+  .trk .nm{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--accent)}
+  .trk .ln{position:relative;display:block;height:2px;background:#B9D0DC}
+  .trk .ln i{position:absolute;top:50%;width:12px;height:12px;border-radius:50%;transform:translate(-50%,-50%);background:#6C9BB5;z-index:2}
+  .joined .trk .ln{background:var(--blue-ex)}
+  .joined .trk .ln i{width:14px;height:14px;background:var(--accent);box-shadow:0 0 0 4px rgba(7,86,122,.18)}
+  .joins{position:absolute;left:120px;right:0;top:29px;height:92px}
+  .joins b{position:absolute;top:0;bottom:0;width:2px;margin-left:-1px;background:var(--accent)}
+  .marks{display:grid;grid-template-columns:104px minmax(0,1fr);gap:16px;margin-top:6px}
+  .marks .m{display:flex;justify-content:space-between}
+  .marks em{font-style:normal;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--dark);white-space:nowrap}
+  .apart .tracks{padding-bottom:21px}
+  .lanes .row-note{margin:18px 0 0;max-width:420px}
+  .lanes .out{margin-top:auto;padding-top:20px;font-family:var(--serif);font-size:21px;line-height:1.3;color:var(--dark)}
+  .lanes .out span{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:6px}
+  .lanes .col-head{font-family:var(--sans);font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--accent);padding-bottom:9px;border-bottom:1px solid var(--dark);margin-bottom:14px}
+
+  #markets .body + .stat{margin:34px 0 0}
+  .trig .say{color:var(--accent)}
+  .trig .say{font-style:italic}
+  .trig .say::before{content:"\201C";display:block;font-style:normal;font-size:76px;line-height:.62;height:34px;color:var(--accent);margin:4px 0 6px -3px}
+  .qslot::before{content:"\201C";display:block;font-family:var(--serif);font-style:normal;font-size:60px;line-height:.62;height:27px;color:var(--accent);margin:4px 0 8px -2px}
+  .qslot p{font-style:italic}
+
+  .devnote{margin:32px 0 0;padding:14px 18px;border:1px dashed var(--accent);border-radius:3px;background:var(--white);font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink-2);max-width:none}
+  .devnote strong{color:var(--accent)}
+</style>
+<style>
+  .cq{margin:36px 0 0;padding:26px 32px 24px;background:var(--white);border-left:3px solid var(--accent);border-radius:0 3px 3px 0;max-width:none}
+  section:not(.tan) .cq{background:var(--cream)}
+  .cq blockquote{margin:0;padding:0;background:none;border:0;max-width:900px;font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.45;color:var(--dark)}
+  .cq blockquote::before{content:"\201C";display:block;font-style:normal;font-size:56px;line-height:.62;height:25px;color:var(--accent);margin:2px 0 8px -2px}
+  .cq figcaption{padding-top:14px;font-size:14px;line-height:1.4;color:var(--muted)}
+  .cq figcaption b{color:var(--dark);font-weight:600;margin-right:8px}
+  @media (max-width:760px){.cq{padding:22px 20px 20px}.cq blockquote{font-size:18px}.cq figcaption b{display:block;margin:0}}
+  .xgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 48px;margin-top:44px;border-top:2px solid var(--dark)}
+  .xb{padding:26px 0 28px;border-bottom:1px solid var(--line)}
+  .xb h4{font-family:var(--serif);font-size:21px;line-height:1.25;color:var(--dark);margin:0 0 10px;font-weight:400}
+  .xb p{font-family:var(--sans);font-size:15.5px;line-height:1.55;color:var(--ink-2);margin:0 0 12px}
+  .xb .proof{font-style:italic;color:var(--accent);margin:0;font-size:15px}
+  .pull{font-family:var(--serif);font-style:italic;font-size:30px;line-height:1.3;color:var(--accent);max-width:780px;margin:40px 0 34px}
+  .pull::before{content:"\201C";display:block;font-style:normal;font-size:76px;line-height:.62;height:34px;color:var(--accent);margin:4px 0 6px -3px}
+  .body{max-width:760px}
+  #work .exhibit.pair{border-top:0;border-radius:0;padding:30px 0 34px;background:transparent}
+  .profile{display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px;padding:40px 0;border-top:1px solid var(--line-2)}
+  #about .eyebrow + .profile{border-top:2px solid var(--dark)}
+  .profile .photo{width:200px;height:240px;object-fit:cover;border-radius:3px}
+  .profile h3{font-family:var(--serif);font-size:28px;color:var(--dark);margin:0 0 4px;font-weight:400}
+  .profile .role{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:var(--accent);margin-bottom:10px}
+  .profile .contact{display:flex;gap:20px;font-weight:600;font-size:14px;margin-bottom:18px}
+  .profile .contact a{color:var(--accent)}
+  .profile p{max-width:760px;color:var(--ink-2);margin:0 0 14px}
+  .profile blockquote{font-style:italic}
+  #raise .xgrid{margin-top:32px}
+  #raise .trig{border-top:0;padding-top:0}
+  @media (max-width:900px){.profile{grid-template-columns:1fr}.xgrid{grid-template-columns:1fr}}
+  section{scroll-margin-top:84px}
+  @media (max-width:760px){section{scroll-margin-top:140px}}
+  .srows .srow:last-child{border-bottom:0}
+  @media (max-width:760px){.lanes{grid-template-columns:1fr;gap:40px}.marks .m{gap:10px}.marks em{font-size:10px;letter-spacing:.06em;white-space:normal}.marks em:last-child{text-align:right}}
+  .trig .say.stmt{font-style:normal}
+  .trig .say.stmt::before{content:none}
+  .profile blockquote::before{content:"\201C";display:block;font-style:normal;font-size:56px;line-height:.62;height:25px;color:var(--accent);margin:2px 0 8px -2px}
+  #markets .cq + .stat{margin:34px 0 0}
+</style>
+<style>
+  .pn h3{font-family:var(--serif);font-size:22px;line-height:1.25;color:var(--dark);font-weight:400;margin:40px 0 12px}
+  .pn h3:first-child{margin-top:0}
+  .pn a{color:var(--accent);border-bottom:1px solid currentColor}
+  .pn table{width:100%;border-collapse:collapse;margin:8px 0 16px;font-size:15px;line-height:1.45}
+  .pn th{text-align:left;font-weight:600;color:var(--dark);padding:10px 14px 10px 0;border-bottom:1px solid var(--dark);vertical-align:bottom}
+  .pn td{color:var(--ink-2);padding:10px 14px 10px 0;border-bottom:1px solid var(--line-2);vertical-align:top}
+  .pn td:first-child{color:var(--dark);font-weight:600}
+  @media (max-width:760px){.pn table,.pn tbody,.pn tr,.pn td{display:block;width:100%}.pn thead{display:none}.pn tr{border-bottom:1px solid var(--line-2);padding:10px 0}.pn td{border:0;padding:2px 0}.pn td:nth-child(2)::before{content:"Kept for: ";font-weight:600;color:var(--dark)}.pn td:nth-child(3)::before{content:"Then: ";font-weight:600;color:var(--dark)}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="index.html" id="top"><b>KSC</b> Advisers</a>
+  <nav class="links" aria-label="Site">
+    <a href="index.html#work">What we do</a>
+    <a href="index.html#raise">Preparing to raise</a>
+    <a href="index.html#about">About</a>
+    <span class="sep" aria-hidden="true"></span>
+    <a href="mailto:kevin@kscadvisers.com">Email</a><a href="https://www.linkedin.com/in/kevinkelley4">LinkedIn</a>
+  </nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <h1>Privacy notice</h1>
+</div></div>
+
+<section class="tan"><div class="wrap">
+  <div class="body pn">
+    <p>KSC Advisers Ltd advises founders and chief executives of medical technology companies. This notice says what personal data we hold, why, where it comes from, how long we keep it, and what you can ask us to do. It applies under the UK GDPR and the Data Protection Act 2018 and, for people in Ireland and the rest of the EU, under the EU GDPR.</p>
+
+    <h3>Who we are</h3>
+    <p>KSC Advisers Ltd, registered in Scotland, company number SC905080, 9 Ainslie Place, Edinburgh EH3 6AS. We are registered with the Information Commissioner's Office, reference ZC271397. Questions and requests about your data go to <a href="mailto:request@kscadvisers.com">request@kscadvisers.com</a>.</p>
+
+    <h3>What we hold and why</h3>
+    <p>We hold business contact data about people we may work with, refer to, or meet in their professional capacity: founders, executives, investors, accelerator and government staff, and people at partner firms. That is your name, job title and organisation; your business email, business phone and LinkedIn profile; how and where we met or heard of you; notes of our conversations and meetings and where you sit in our pipeline; and the calendar entries and email threads that our assistant tools read to prepare our day.</p>
+    <p>We hold it to develop and manage business relationships: to introduce our work, follow up on conversations, make introductions and keep in touch about the field. The lawful basis is our legitimate interest in doing so. We do not rely on consent for this. We do not record special category data (health, ethnicity, beliefs and the like); if it reaches us, we delete it.</p>
+
+    <h3>Where it comes from</h3>
+    <p>From you directly; from an introduction; from an event we both attended; from public professional profiles such as LinkedIn or Companies House; and from lists provided by referral partners. Where we did not get your details from you, we send you this notice with our first message. Until then, this published notice is how we tell you.</p>
+
+    <h3>Email</h3>
+    <p>One-to-one business emails to you in your work role carry an opt-out in every message. Bulk mailings such as newsletters or event invitations go to company addresses only, with an unsubscribe in every message. If you tell us to stop, we stop at once.</p>
+
+    <h3>How long we keep it</h3>
+    <table>
+      <thead><tr><th>Your situation</th><th>Kept for</th><th>Then</th></tr></thead>
+      <tbody>
+        <tr><td>You gave us your details and we have had no further contact</td><td>36 months</td><td>Deleted; the organisation listing stays</td></tr>
+        <tr><td>We obtained your name elsewhere and have not written to you</td><td>36 months</td><td>Deleted; the organisation listing stays</td></tr>
+        <tr><td>We are in an active conversation</td><td>48 months from our last contact</td><td>Reviewed and deleted unless the relationship is live</td></tr>
+        <tr><td>You become a client</td><td>The engagement, and up to 12 months after it closes</td><td>Deleted, unless you ask us to keep your files longer; you can ask for deletion at any time</td></tr>
+        <tr><td>You object or ask us to delete your data</td><td>Deleted at once</td><td>Your name and email are kept on a suppression list only, so we do not add you again from another source</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Where it is held and who processes it</h3>
+    <p>Our records are held in Microsoft SharePoint, with data at rest in the United Kingdom, under Microsoft's data protection terms. Our email and calendar are held in Google Workspace, under Google's data processing terms. We use AI services from established providers to read and maintain our records and to prepare our work; each processes data on our behalf under its commercial data processing terms. Where a provider processes data outside the UK, the transfer is covered by the UK International Data Transfer Addendum or the EU standard contractual clauses. We never sell personal data and never share it outside the firm except with these processors.</p>
+
+    <h3>Client files</h3>
+    <p>If you are a client, the files you send us are used only to do your work, never for training or benchmarking, and are kept in a folder of their own. Where a file you send names other people, for example shareholders on a cap table, that is your data and your responsibility; we hold it as you agree and pass any request from those people to you. We do not accept patient or trial-subject data.</p>
+
+    <h3>Your rights</h3>
+    <p>You can ask what we hold about you, ask us to correct it, ask us to delete it, or object to our holding it. Email <a href="mailto:request@kscadvisers.com">request@kscadvisers.com</a>. We answer within one month. Objection to marketing is absolute: we stop at once. If you are not satisfied, you can complain to the Information Commissioner's Office (<a href="https://ico.org.uk">ico.org.uk</a>) or, if you are in Ireland, to the Data Protection Commission (<a href="https://www.dataprotection.ie">dataprotection.ie</a>).</p>
+
+    <h3>Changes</h3>
+    <p>This notice is dated 23 November 2026. We update it when our practice changes and the current version is always at this address.</p>
+  </div>
+</div></section>
+
+<footer><div class="wrap foot">
+  <span>KSC Advisers · Edinburgh, UK</span><span aria-hidden="true">·</span><a href="mailto:kevin@kscadvisers.com">kevin@kscadvisers.com</a><span aria-hidden="true">·</span><a href="privacy.html">Privacy</a><span aria-hidden="true">·</span><span>© 2026 KSC Advisers Ltd</span>
+</div></footer>
+<script>
+  (function(){var h=document.querySelector('header'),hero=document.querySelector('.hero');
+    function f(){h.classList.toggle('scrolled',hero.getBoundingClientRect().bottom<=h.offsetHeight)}
+    if(h&&hero){window.addEventListener('scroll',f,{passive:true});f();}})();
+</script>
+</body>
+</html>
