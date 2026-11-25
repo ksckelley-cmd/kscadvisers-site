@@ -293,17 +293,29 @@
   @media (max-width:900px){.chain{grid-template-columns:1fr}.chain > div,.chain > div + div{padding:16px 0;border-left:0;border-bottom:1px solid var(--line-2)}.chain > div:last-child{border-bottom:0}}
   @media (max-width:760px){.dtable thead{display:none}.dtable,.dtable tbody,.dtable tr,.dtable td{display:block;width:auto!important}.dtable tr{padding:16px 0;border-bottom:1px solid var(--line-2)}.dtable tr:last-child{border-bottom:0}.dtable td{border:0;padding:4px 0}.dtable td:nth-child(2)::before{content:"What founders often assume: ";font-weight:600;color:var(--ink-2)}.dtable td:nth-child(3)::before{content:"What decides it in the UK: ";font-weight:600;color:var(--ink)}}
 </style>
+<style>
+  .dd{position:relative}
+  .dd > button{font:inherit;letter-spacing:inherit;color:inherit;background:none;border:0;border-bottom:2px solid transparent;padding:6px 0 4px;cursor:pointer;opacity:.9;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+  .dd > button::after{content:"";border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;margin-top:1px;transition:transform .15s}
+  .dd > button[aria-current="page"],.dd > button:hover,.dd > button:focus-visible,.dd.open > button{opacity:1;border-bottom-color:currentColor}
+  .dd.open > button::after{transform:rotate(180deg)}
+  .dd .sub{display:none;position:absolute;left:-18px;top:calc(100% + 10px);min-width:250px;background:var(--white);color:var(--dark);border:1px solid var(--line-2);border-top:2px solid var(--dark);padding:8px 0;z-index:60;box-shadow:0 8px 24px rgba(31,64,66,.10)}
+  .dd.end .sub{left:auto;right:-18px}
+  .dd.open .sub{display:block}
+  .dd .sub a{display:block;padding:9px 18px;border:0;opacity:1;font-weight:600;font-size:14px;color:var(--dark);white-space:nowrap}
+  .dd .sub a:hover,.dd .sub a:focus-visible{background:var(--cream);color:var(--accent)}
+  @media (hover:hover) and (min-width:761px){.dd:hover .sub{display:block}.dd .sub::before{content:"";position:absolute;left:0;right:0;top:-14px;height:14px}}
+  .links{gap:30px}
+  @media (max-width:760px){.links{gap:16px;flex-wrap:nowrap}.dd > button{gap:5px}.dd .sub{left:-10px;min-width:220px}.dd.end .sub{right:-10px}.dd .sub a{white-space:normal}}
+</style>
 </head>
 <body>
 <header><div class="wrap nav">
   <a class="brand" href="index.html" id="top"><b>KSC</b> Advisers</a>
   <nav class="links" aria-label="Site">
-    <a href="index.html#work">What we do</a>
-    <a href="index.html#model">Our model</a>
-    <a href="how-we-work.html" aria-current="page">How we work</a>
-    <a href="index.html#raise">Raising capital</a>
-    <a href="index.html#markets">Cross-border</a>
-    <a href="index.html#about">About</a>
+    <div class="dd"><button type="button" aria-expanded="false" aria-controls="dd0">Home</button><div class="sub" id="dd0"><a href="index.html#why">Who we are</a><a href="index.html#work">What we do</a><a href="index.html#raise">Raising capital</a><a href="index.html#markets">Cross-border</a><a href="index.html#about">About</a></div></div>
+    <div class="dd"><button type="button" aria-expanded="false" aria-controls="dd1" aria-current="page">The model</button><div class="sub" id="dd1"><a href="index.html#model">Our model</a><a href="how-we-work.html">How we work</a><a href="how-we-work.html#risk">How milestones remove risk</a><a href="how-we-work.html#process">Pre-commercialisation milestones</a><a href="how-we-work.html#market">Commercial milestones</a></div></div>
+    <div class="dd end"><button type="button" aria-expanded="false" aria-controls="dd2">Expertise</button><div class="sub" id="dd2"><a href="expertise.html#top">Overview</a><a href="expertise.html#plan">The plan</a><a href="expertise.html#raise">The raise</a><a href="expertise.html#market">The market</a><a href="expertise.html#growth">The execution</a><a href="expertise.html#specialists">The correct specialist</a><a href="expertise.html#expertise">Experience</a></div></div>
     <span class="sep" aria-hidden="true"></span>
     <a class="ico" href="mailto:kevin@kscadvisers.com" aria-label="Email Kevin" title="Email"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="M3.6 7l8.4 6.2L20.4 7"/></svg></a><a class="ico ico-in" href="https://www.linkedin.com/in/kevinkelley4" aria-label="Kevin Kelley on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3" fill="currentColor"/><g class="g"><rect x="6" y="10" width="2.8" height="8"/><circle cx="7.4" cy="6.9" r="1.6"/><path d="M11 10h2.7v1.2c.5-.9 1.6-1.5 3-1.5 2.3 0 3.3 1.4 3.3 3.9V18h-2.8v-4c0-1.2-.4-2-1.5-2s-1.9.8-1.9 2.1V18H11z"/></g></svg></a>
   </nav>
@@ -492,7 +504,7 @@
     <div class="srow" style="padding-top:22px"><div><span class="n">01</span><h4>What stage is my company?</h4></div><p>We evaluate the company against what funders at its next milestone will require, not against the end point. Investors ask for more evidence when they do not yet understand the market or the company.</p></div>
     <div class="srow"><div><span class="n">02</span><h4>What does this milestone accomplish?</h4></div><p>With the company, we define what the milestone has to prove. It reduces investor risk and makes the company more valuable. Funding is sized to complete the milestone.</p></div>
     <div class="srow"><div><span class="n">03</span><h4>Which funders fit?</h4></div><p>Family offices, grants, angel groups and venture capital, or a mix: who they are and what motivates them to invest. We read the company for the stage it has reached, not by the name of its round.</p></div>
-    <div class="srow"><div><span class="n">04</span><h4>Who does the work, and when?</h4></div><p>We select and qualify the specialists, in the UK and the US. They work to the company's plan alongside its other advisers. When the milestone is reached, the specialists may change. It's in the plan.</p></div>
+    <div class="srow"><div><span class="n">04</span><h4>Who does the work, and when?</h4></div><p>We qualify and recommend the specialists, in the UK and the US. They work to the company's plan alongside its other advisers. When the milestone is reached, the specialists may change. It's in the plan.</p></div>
   </div>
 </div></section>
 
@@ -530,5 +542,16 @@
 <footer><div class="wrap foot">
   <span>KSC Advisers · Edinburgh, UK</span><span aria-hidden="true">·</span><a href="mailto:kevin@kscadvisers.com">kevin@kscadvisers.com</a><span aria-hidden="true">·</span><a href="privacy.html">Privacy</a><span aria-hidden="true">·</span><span>© 2026 KSC Advisers Ltd</span>
 </div></footer>
+<script>
+(function(){
+  var dds=[].slice.call(document.querySelectorAll(".dd"));
+  function close(x){dds.forEach(function(d){if(d!==x){d.classList.remove("open");d.querySelector("button").setAttribute("aria-expanded","false");}});}
+  dds.forEach(function(d){var b=d.querySelector("button");
+    b.addEventListener("click",function(e){e.stopPropagation();var o=!d.classList.contains("open");close(d);d.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false");});
+    d.querySelectorAll(".sub a").forEach(function(a){a.addEventListener("click",function(){close(null);});});});
+  document.addEventListener("click",function(){close(null);});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")close(null);});
+})();
+</script>
 </body>
 </html>
