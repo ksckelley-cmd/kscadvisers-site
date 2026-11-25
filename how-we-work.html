@@ -308,14 +308,21 @@
   .links{gap:30px}
   @media (max-width:760px){.links{gap:16px;flex-wrap:nowrap}.dd > button{gap:5px}.dd .sub{left:-10px;min-width:220px}.dd.end .sub{right:-10px}.dd .sub a{white-space:normal}}
 </style>
+<style>
+/* v4.3.2 menu: the label opens its page; the arrow opens the list */
+.dd{display:inline-flex;align-items:center;gap:4px}
+.dd > a.top{display:inline-block}
+.dd > button.arr{padding:6px 3px 4px;border-bottom-color:transparent!important;gap:0}
+.dd > button.arr::after{margin-top:0}
+</style>
 </head>
 <body>
 <header><div class="wrap nav">
   <a class="brand" href="index.html" id="top"><b>KSC</b> Advisers</a>
   <nav class="links" aria-label="Site">
-    <div class="dd"><button type="button" aria-expanded="false" aria-controls="dd0">Home</button><div class="sub" id="dd0"><a href="index.html#why">Who we are</a><a href="index.html#work">What we do</a><a href="index.html#raise">Raising capital</a><a href="index.html#markets">Cross-border</a><a href="index.html#about">About</a></div></div>
-    <div class="dd"><button type="button" aria-expanded="false" aria-controls="dd1" aria-current="page">The model</button><div class="sub" id="dd1"><a href="index.html#model">Our model</a><a href="how-we-work.html">How we work</a><a href="how-we-work.html#risk">How milestones remove risk</a><a href="how-we-work.html#process">Pre-commercialisation milestones</a><a href="how-we-work.html#market">Commercial milestones</a></div></div>
-    <div class="dd end"><button type="button" aria-expanded="false" aria-controls="dd2">Expertise</button><div class="sub" id="dd2"><a href="expertise.html#top">Overview</a><a href="expertise.html#plan">The plan</a><a href="expertise.html#raise">The raise</a><a href="expertise.html#market">The market</a><a href="expertise.html#growth">The execution</a><a href="expertise.html#specialists">The correct specialist</a><a href="expertise.html#expertise">Experience</a></div></div>
+    <div class="dd"><a class="top" href="index.html">Home</a><button class="arr" type="button" aria-expanded="false" aria-controls="dd0" aria-label="Home menu"></button><div class="sub" id="dd0"><a href="index.html#why">Who we are</a><a href="index.html#work">What we do</a><a href="index.html#model">Our model</a><a href="index.html#raise">Raising capital</a><a href="index.html#markets">Cross-border</a><a href="index.html#about">About</a></div></div>
+    <div class="dd"><a class="top" href="how-we-work.html" aria-current="page">Approach</a><button class="arr" type="button" aria-expanded="false" aria-controls="dd1" aria-label="Approach menu"></button><div class="sub" id="dd1"><a href="how-we-work.html">How we work</a><a href="how-we-work.html#risk">How milestones remove risk</a><a href="how-we-work.html#process">Pre-commercialisation milestones</a><a href="how-we-work.html#market">Commercial milestones</a></div></div>
+    <div class="dd end"><a class="top" href="expertise.html">Expertise</a><button class="arr" type="button" aria-expanded="false" aria-controls="dd2" aria-label="Expertise menu"></button><div class="sub" id="dd2"><a href="expertise.html#top">Overview</a><a href="expertise.html#plan">The plan</a><a href="expertise.html#raise">The raise</a><a href="expertise.html#market">The market</a><a href="expertise.html#growth">The execution</a><a href="expertise.html#specialists">The correct specialist</a><a href="expertise.html#expertise">Experience</a></div></div>
     <span class="sep" aria-hidden="true"></span>
     <a class="ico" href="mailto:kevin@kscadvisers.com" aria-label="Email Kevin" title="Email"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="M3.6 7l8.4 6.2L20.4 7"/></svg></a><a class="ico ico-in" href="https://www.linkedin.com/in/kevinkelley4" aria-label="Kevin Kelley on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3" fill="currentColor"/><g class="g"><rect x="6" y="10" width="2.8" height="8"/><circle cx="7.4" cy="6.9" r="1.6"/><path d="M11 10h2.7v1.2c.5-.9 1.6-1.5 3-1.5 2.3 0 3.3 1.4 3.3 3.9V18h-2.8v-4c0-1.2-.4-2-1.5-2s-1.9.8-1.9 2.1V18H11z"/></g></svg></a>
   </nav>
